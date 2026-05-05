@@ -1,0 +1,61 @@
+{
+  "name": "@l1-pager/core",
+  "version": "0.1.0",
+  "description": "Context Garbage Collector (CGC) for LangGraph agents — virtual memory for LLM context windows",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node smoke_test.mjs"
+  },
+  "keywords": [
+    "langgraph",
+    "langchain",
+    "llm",
+    "agents",
+    "context-window",
+    "memory",
+    "context-management",
+    "ai"
+  ],
+  "author": "L1-Pager Contributors",
+  "license": "MIT",
+  "homepage": "https://github.com/l1-pager/l1-pager",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/l1-pager/l1-pager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/l1-pager/l1-pager/issues"
+  },
+  "peerDependencies": {
+    "@langchain/core": ">=0.3.0",
+    "@langchain/langgraph": ">=0.2.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@langchain/core": "^0.3.0",
+    "@langchain/langgraph": "^0.2.0",
+    "@types/node": "^22.0.0",
+    "redis": "^5.12.1",
+    "typescript": "^5.5.0"
+  },
+  "optionalDependencies": {
+    "redis": "^5.12.1"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}
