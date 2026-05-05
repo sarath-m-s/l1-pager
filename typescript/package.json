@@ -1,6 +1,6 @@
 {
-  "name": "@l1-pager/core",
-  "version": "0.1.0",
+  "name": "l1-pager-core",
+  "version": "0.1.1",
   "description": "Context Garbage Collector (CGC) for LangGraph agents — virtual memory for LLM context windows",
   "type": "module",
   "main": "./dist/index.js",

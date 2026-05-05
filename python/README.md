@@ -13,7 +13,7 @@ Without L1-Pager                   With L1-Pager
 │ Tool result 2KB  │               │ [ptr: tool result evicted]   │
 │ Tool result 4KB  │               │ Tool result 4KB              │ ← recent, kept
 │ ...12 more turns │               │ ...12 more turns             │
-│ 128K limit hit   │ ✗             │ Plenty of headroom           │ ✓
+│ Recency bias     │ ✗             │ Active window stays tight    │ ✓
 └──────────────────┘               └──────────────────────────────┘
 ```
 
@@ -53,7 +53,7 @@ pip install "l1-pager[redis]"
 
 **TypeScript / JavaScript**
 ```bash
-npm install @l1-pager/core
+npm install l1-pager-core
 ```
 
 ---
