@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "l1-pager"
-version = "0.1.0"
+version = "1.1.1"
 description = "Context Garbage Collector (CGC) for LangGraph agents — virtual memory for LLM context windows"
 requires-python = ">=3.11"
 readme = "README.md"
