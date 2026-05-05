@@ -212,11 +212,6 @@ Run against synthetic conversations on Apple M-series (no Redis):
 
 SLA target: **15ms**. Actual worst-case p99: **0.55ms** (27× headroom).
 
-Run benchmarks yourself:
-```bash
-cd python && python benchmarks/bench_sweep.py
-```
-
 ---
 
 ## Project structure
@@ -234,8 +229,7 @@ l1-pager/
 │   │   ├── interceptor.py     # L1Pager — the main class
 │   │   ├── langgraph_integration.py
 │   │   └── wrap.py            # @l1_pager_hook decorator
-│   ├── tests/
-│   └── benchmarks/
+│   └── tests/
 └── typescript/                # npm package: @l1-pager/core
     └── src/
         ├── schema.ts
