@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
     paths: ["typescript/**"]
+    tags: ["ts-v*"]
   pull_request:
     paths: ["typescript/**"]
 
